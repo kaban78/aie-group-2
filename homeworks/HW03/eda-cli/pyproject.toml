@@ -1,0 +1,15 @@
+[project]
+name = "eda-cli"
+version = "0.1.0"
+dependencies = [
+    "pandas",
+    "matplotlib",
+    "click>=8.0.0",
+    "seaborn",
+]
+
+[project.scripts]
+eda-cli = "eda_cli.cli:app"
+
+[build-system]
+requires = ["setuptools", "wheel"]
